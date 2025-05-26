@@ -1,6 +1,6 @@
 # 🤖 Claude & ChatGPT → Gemini 변환기
 
-Claude와 ChatGPT 대화 내보내기 파일을 **NotebookLM (Gemini)** 호환 형식으로 변환하여 강력한 분석과 인사이트를 얻으세요.
+Claude와 ChatGPT 대화 내보내기를 **NotebookLM (Gemini)** 호환 형식으로 변환하여 강력한 분석과 인사이트를 얻으세요.
 
 ## 🎯 이 도구가 하는 일
 
@@ -24,7 +24,7 @@ AI 대화 히스토리를 정리된 검색 가능한 지식 베이스로 변환�
 
 ### 2. 도구 실행
 1. `conversations.json` 파일을 `input/` 폴더에 넣기
-2. `process_conversations.bat` 더블클릭
+2. `process_conversations_v2.bat` 더블클릭
 3. 처리 완료까지 대기
 
 ### 3. NotebookLM에 업로드
@@ -78,16 +78,17 @@ AI 대화 히스토리를 정리된 검색 가능한 지식 베이스로 변환�
 
 ```
 Claude-ChatGPT-to-Gemini/
-├── 🚀 process_conversations.bat        # 메인 실행 스크립트
-├── 📄 README.md                        # 이 파일 (영어)
-├── 📄 README_KR.md                     # 한국어 버전
-├── 📄 QUICKSTART_KR.md                 # 한국어 빠른 시작
-├── 📄 INSTRUCTIONS_KR.md               # 한국어 상세 가이드
-├── 📄 TROUBLESHOOTING_KR.md            # 한국어 문제 해결
-├── 📁 modules/                         # 처리 모듈들
-├── 📁 input/                           # JSON 파일을 여기에
-├── 📁 output/                          # 생성된 파일들
-└── 📁 temp/                            # 로그 및 임시 파일
+├── 🚀 process_conversations_v2.bat    # 메인 실행 스크립트
+├── 📄 README.md                       # 영어 버전
+├── 📄 README_KR.md                    # 이 파일 (한국어)
+├── 📄 QUICKSTART.md                   # 빠른 시작 가이드
+├── 📄 INSTRUCTIONS.md                 # 상세 사용법
+├── 📄 NEW_USER_GUIDE.md               # 완전 사용자 가이드
+├── 📄 TROUBLESHOOTING.md              # 오류 해결
+├── 📁 modules/                        # 처리 모듈들
+├── 📁 input/                          # JSON 파일을 여기에
+├── 📁 output/                         # 생성된 파일들
+└── 📁 temp/                           # 로그 및 임시 파일
 ```
 
 ## 🔧 고급 사용법
@@ -119,7 +120,7 @@ python main_processor_fixed.py ../input/conversations.json
 - **메모리 오류** → 다른 프로그램 종료 후 컴퓨터 재시작
 
 ### 도움 받기
-1. 자세한 해결 방법은 `TROUBLESHOOTING_KR.md` 확인
+1. 자세한 해결 방법은 `TROUBLESHOOTING.md` 확인
 2. 자동 진단을 위해 `error_recovery.py` 실행
 3. `temp/` 폴더의 로그 파일 검토
 4. 지원되는 내보내기 형식인지 확인
@@ -157,10 +158,3 @@ MIT 라이선스 - 자유롭게 사용, 수정, 배포하세요!
 **🎯 NotebookLM으로 AI 대화를 가치 있는 인사이트로 바꿔보세요!**
 
 *AI 네이티브 세대를 위한 디지털 상호작용 이해 도구*
-
-## 🔗 관련 문서
-
-- [🚀 빠른 시작 가이드 (한국어)](QUICKSTART_KR.md)
-- [📖 상세 사용법 (한국어)](INSTRUCTIONS_KR.md)  
-- [🔧 문제 해결 (한국어)](TROUBLESHOOTING_KR.md)
-- [📄 English README](README.md)
